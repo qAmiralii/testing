@@ -13,6 +13,6 @@ public class Notification : SQLThing
     public string Message { get; set; }
     public DateTime SentTime { get; set; }
     public NotificationType Type { get; set; } 
-    public List<NotificationRecipient> Recipients { get; set; } = new();
+    public List<NotificationRecipient> Recipients { get; set; } // چه کسانی
 
 }
