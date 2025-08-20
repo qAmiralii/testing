@@ -7,8 +7,8 @@ namespace Tourino.Core.Entities;
 public class TourTasks : SQLThing
 {
     public Guid TourPlanId { get; set; }
-    public TourPlan Plan { get; set; }
-    public string Title { get; set; } //!!!!!!!!!!!!!!!!!!!!
+    public required TourPlan Plan { get; set; }
+    public required string Title { get; set; } 
     public string? Description { get; set; }
     public bool IsCompleted { get; set; } = false;
     public string? Icon { get; set; }

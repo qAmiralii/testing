@@ -8,11 +8,11 @@ namespace Tourino.Core.Entities;
 public class Notification : SQLThing
 {
     public Guid TourId { get; set; }
-    public Tour Tour { get; set; }
-    public string Title { get; set; }
-    public string Message { get; set; }
+    public required Tour Tour { get; set; }
+    public required string Title { get; set; }
+    public required string Message { get; set; }
     public DateTime SentTime { get; set; }
     public NotificationType Type { get; set; } 
-    public List<NotificationRecipient> Recipients { get; set; } // چه کسانی
+    public required List<NotificationRecipient> Recipients { get; set; } // چه کسانی
 
 }

@@ -4,11 +4,11 @@ using Tourino.Core.Things;
 
 namespace Tourino.Core.Entities;
 
-public class TourPhoto : SQLThing
+public class Attendance : SQLThing
 {
     public Guid TourId { get; set; }
     public required Tour Tour { get; set; }
-    public required string Url { get; set; }
-    public DateTime UploadTime { get; set; }
-    public string? UploadBy { get; set; }
+    public DateTime SessionDate { get; set; }
+    public ICollection<PassengerAttendance> PassengerAttendances { get; set; }
+
 }

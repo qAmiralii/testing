@@ -5,11 +5,12 @@ namespace Tourino.Core.Things;
 
 public class TourExpense : SQLThing
 {
+    // هزینه تور
     public Guid TourId { get; set; }
-    public Tour Tour { get; set; }
-    public string Title { get; set; }         
+    public required Tour Tour { get; set; }
+    public required string Title { get; set; }         
     public string? Description { get; set; }      
     public decimal Amount { get; set; }           
-    public string? PaidBy { get; set; }          
+    public required string PaidBy { get; set; }          
     public DateTime ExpenseDate { get; set; }     
 }

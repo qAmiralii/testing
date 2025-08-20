@@ -15,5 +15,7 @@ public class TourRegistration
     public int? NumberOfSeats { get; set; }    // شماره صندلی ها
     public DocumentStatus IsPaidStatus { get; set; } = DocumentStatus.Pending;
     public required string PaymentReference { get; set; }    // شماره تراکنش 
+    public PassengerStatus Status { get; set; }
+
 
 }
