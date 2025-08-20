@@ -9,6 +9,6 @@ public class Attendance : SQLThing
     public Guid TourId { get; set; }
     public required Tour Tour { get; set; }
     public DateTime SessionDate { get; set; }
-    public ICollection<PassengerAttendance> PassengerAttendances { get; set; }
+    public required ICollection<PassengerAttendance> PassengerAttendances { get; set; }
 
 }
